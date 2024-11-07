@@ -10,5 +10,5 @@ import { AppHeaderComponent } from "../cmps/app-header/app-header.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular_store';
+  
 }
