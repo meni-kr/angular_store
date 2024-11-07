@@ -1,7 +1,7 @@
 <mat-toolbar class="nav_container max-w-7xl border-x justify-between">
     <a routerLink="home">The Store</a>
     <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon [matBadge]="1" aria-hidden="false">shopping_cart</mat-icon>
+        <mat-icon [matBadge]="1" matBadgeColor="warn" aria-hidden="false">shopping_cart</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
         <div class="p-3 divide-y divide-solid">
