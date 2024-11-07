@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MaterialModule } from '../../shared/material.module';
 import { ProductsHeaderComponent } from "../../cmps/products-header/products-header.component";
 
@@ -10,5 +10,11 @@ import { ProductsHeaderComponent } from "../../cmps/products-header/products-hea
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  
+  cols =3
+
+  onColumnsCountChange(colsNum: number){
+    this.cols = colsNum
+  }
 
 }
