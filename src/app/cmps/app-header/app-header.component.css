@@ -2,3 +2,6 @@
     margin-inline: auto;
     /* border-color: #ccdada; */
 }
+a:hover{
+    cursor: pointer;
+}

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, output, Output } from '@angular/core';
 import { MaterialModule } from '../../shared/material.module';
 
 @Component({
@@ -9,7 +9,10 @@ import { MaterialModule } from '../../shared/material.module';
   styleUrl: './products-header.component.css'
 })
 export class ProductsHeaderComponent {
-  @Output() columnsCountChange =new EventEmitter<number>()
+  // new
+  columnsCountChange = output<number>()
+  // old
+  // @Output() columnsCountChange =new EventEmitter<number>()
   sort='desc'
   itemsShowCount=12
 

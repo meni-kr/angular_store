@@ -2,10 +2,11 @@
 [autosize]="true"
 class="min-h-full max-w-7xl mx-auto border-x"
 >
-    <mat-drawer class="p-4" mode="side" opened>
-        <div>filter</div>
+    <mat-drawer class="p-4 mt-6" mode="side" opened>
+        <product-filter (showCategory)="onShowCategory($event)"></product-filter>
     </mat-drawer>
     <mat-drawer-content class="p-6">
         <products-header (columnsCountChange)="onColumnsCountChange($event)"></products-header>
+        
     </mat-drawer-content>
 </mat-drawer-container>
