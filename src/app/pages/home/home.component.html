@@ -1,12 +1,30 @@
 <mat-drawer-container [autosize]="true" class="min-h-full max-w-7xl mx-auto border-x">
-    <mat-drawer class="p-4 mt-6" mode="side" opened>
+    <mat-drawer class="p-6 " mode="side" opened>
         <product-filter (showCategory)="onShowCategory($event)"></product-filter>
     </mat-drawer>
     <mat-drawer-content class="p-6">
         <products-header (columnsCountChange)="onColumnsCountChange($event)"></products-header>
         <mat-grid-list gutterSize="16" [cols]="cols" [rowHeight]="rowHeight">
             <mat-grid-tile>
-                
+                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
             </mat-grid-tile>
         </mat-grid-list>
     </mat-drawer-content>

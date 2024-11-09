@@ -16,8 +16,8 @@ export class ProductFilterComponent  {
 
   categories = ['shoes','sports']
 
-  onShowCategory(category:string): void {
-    this.showCategory.emit(category);
-  }
+  // onShowCategory(category:string): void {
+  //   this.showCategory.emit(category);
+  // }
 
 }

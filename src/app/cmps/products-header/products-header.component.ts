@@ -13,18 +13,16 @@ export class ProductsHeaderComponent {
   columnsCountChange = output<number>()
   // old
   // @Output() columnsCountChange =new EventEmitter<number>()
-  sort='desc'
-  itemsShowCount=12
+  sort = 'desc'
+  itemsShowCount = 12
 
-  onSortUpdated(newSort: string):void{
+  onSortUpdated(newSort: string): void {
     this.sort = newSort;
   }
 
-  onItemsUpdated(count: number):void{
+  onItemsUpdated(count: number): void {
     this.itemsShowCount = count
   }
 
-  onColumnsUpdated(colsNum: number):void{
-    this.columnsCountChange.emit(colsNum)
-  }
+
 }

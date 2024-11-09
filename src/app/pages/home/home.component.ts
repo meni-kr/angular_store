@@ -1,7 +1,8 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { MaterialModule } from '../../shared/material.module';
 import { ProductsHeaderComponent } from "../../cmps/products-header/products-header.component";
 import { ProductFilterComponent } from "../../cmps/product-filter/product-filter.component";
+import { ProductPreviewComponent } from '../../cmps/product-preview/product-preview.component';
 
 
 const ROWS_HEIGHT:{[id:number]:number} ={1:400,3:335,4:350}
@@ -13,7 +14,7 @@ const ROWS_HEIGHT:{[id:number]:number} ={1:400,3:335,4:350}
     MaterialModule,
     ProductsHeaderComponent, 
     ProductFilterComponent, 
-    ProductFilterComponent
+    ProductPreviewComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
