@@ -1,5 +1,5 @@
 import { Component, EventEmitter, output, Output } from '@angular/core';
-import { MaterialModule } from '../../shared/material.module';
+import { MaterialModule } from '../../models/material.module';
 
 @Component({
   selector: 'products-header',

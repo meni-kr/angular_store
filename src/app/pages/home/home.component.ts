@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { MaterialModule } from '../../shared/material.module';
+import { MaterialModule } from '../../models/material.module';
 import { ProductsHeaderComponent } from "../../cmps/products-header/products-header.component";
 import { ProductFilterComponent } from "../../cmps/product-filter/product-filter.component";
 import { ProductPreviewComponent } from '../../cmps/product-preview/product-preview.component';

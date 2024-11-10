@@ -1,5 +1,5 @@
 import { Component, Input, input } from '@angular/core';
-import { MaterialModule } from '../../shared/material.module';
+import { MaterialModule } from '../../models/material.module';
 
 @Component({
   selector: 'product-preview',
