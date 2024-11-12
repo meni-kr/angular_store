@@ -6,25 +6,10 @@
         <products-header (columnsCountChange)="onColumnsCountChange($event)"></products-header>
         <mat-grid-list gutterSize="16" [cols]="cols" [rowHeight]="rowHeight">
             <mat-grid-tile>
-                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <product-preview class="w-full" [fullWidthMode]="cols === 1"></product-preview>
+                <!-- (addToCart)="onAddToCart($event)"  -->
+                <product-preview 
+                class="w-full" 
+                [fullWidthMode]="cols === 1"></product-preview>
             </mat-grid-tile>
         </mat-grid-list>
     </mat-drawer-content>
